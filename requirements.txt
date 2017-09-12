@@ -29,7 +29,6 @@ Pyphen==0.9.4
 python-dateutil==2.6.0
 pytz==2017.2
 requests==2.18.1
-reusable-blog-app==1.0.0
 six==1.10.0
 sqlparse==0.2.3
 stripe==1.62.0
