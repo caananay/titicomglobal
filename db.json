@@ -1,0 +1,885 @@
+[
+{
+    "model": "sessions.session",
+    "pk": "pjui1fu2c16m2n538tiv41x8hj8mjetk",
+    "fields": {
+        "session_data": "NWUwMDk4NDIxZWI0ZjEyYWQ4YjY3YWQ3NzMyOTY3ODkwYzlhMTRhNDp7ImNhcnQiOnt9fQ==",
+        "expire_date": "2017-09-26T11:22:47.324Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "tagmms88spk1we78wnd990locplyd55n",
+    "fields": {
+        "session_data": "YTVhM2ZiY2FjNzc4NzgyM2RmMGYyNzA5MzQ1ODkzNWExMDA1NjgzZTp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImFjY291bnRzLmJhY2tlbmRzLkVtYWlsQXV0aCIsIl9hdXRoX3VzZXJfaGFzaCI6IjAwYjZlZThjMjg2MjE4ZjI3Yzg4ZmRlMmFlNjI5ODgxMTdmZmFmOWQiLCJfYXV0aF91c2VyX2lkIjoiMiIsImNhcnQiOnsiMSI6eyJwcmljZSI6IjEwLjAwIiwicXVhbnRpdHkiOjF9fX0=",
+        "expire_date": "2017-09-26T09:25:04.739Z"
+    }
+},
+{
+    "model": "sites.site",
+    "pk": 1,
+    "fields": {
+        "domain": "example.com",
+        "name": "example.com"
+    }
+},
+{
+    "model": "sites.site",
+    "pk": 2,
+    "fields": {
+        "domain": "localhost",
+        "name": "localhost"
+    }
+},
+{
+    "model": "flatpages.flatpage",
+    "pk": 1,
+    "fields": {
+        "url": "/pages/terms/",
+        "title": "Terms of Use",
+        "content": "<p>&nbsp;</p>\r\n<h4>About Us</h4>\r\n\r\n<p>This website is owned and operated by: Titicom Global Limited</p>\r\n\r\n<p>Email: info@titicom.co.uk</p>\r\n<p>Tel: 01209876543</p>\r\n\r\n<p>If you need to contact us please use the details above and on our contact us page.</p>\r\n<p>&nbsp;</p>\r\n<h4>Conditions Of Use</h4>\r\n\r\n<p>Titicom Global Limited provide their services to you subject to the following conditions. If you visit our shop at titicomglobal.co.uk you accept these conditions.  Please ensure that you read these Conditions carefully before you order any Goods from the Website. You should understand that by ordering any Goods through the Website you are agreeing to be bound by these Conditions.</p>\r\n\r\n<p>We may update or amend these Conditions from time to time to reflect changes in market conditions affecting our business, changes in technology, changes in payment methods, changes in relevant laws and regulatory requirements and changes in our system's capabilities. Any updates or amendments will be posted on the Website.</p>\r\n<p>&nbsp;</p>\r\n<h4>Product Descriptions</h4>\r\n\r\n<p>titicomglobal.co.uk attempt to be as accurate as possible however we do not warrant that product descriptions or other content is accurate, complete, reliable, or error free.</p>\r\n\r\n<p>From time to time there may be information on the website that contains typographical errors, inaccuracies or omissions that may relate to product descriptions, pricing and availability.</p>\r\n\r\n<p>We reserve the right to correct any errors, inaccuracies or omissions and to change or update information at any time without prior notice. (Including after you have submitted your order) We apologies for any inconvenience this may cause you.</p>",
+        "enable_comments": false,
+        "template_name": "",
+        "registration_required": false,
+        "sites": [
+            [
+                "localhost"
+            ]
+        ]
+    }
+},
+{
+    "model": "flatpages.flatpage",
+    "pk": 2,
+    "fields": {
+        "url": "/pages/policy/",
+        "title": "Privacy Policy",
+        "content": "<p>&nbsp;</p>\r\n<h4>Privacy Notice</h4>\r\n\r\n<p>This policy covers all users who register to use the website. It is not necessary to purchase anything in order to gain access to the searching facilities of the site.</p>\r\n\r\n<p>When making a purchase you will be asked to provide your name, billing address, delivery address, telephone number and credit or debit card details. You will be required to choose a username and password on completion of registration. You are responsible for keeping this information safe and should not disclose this information to anyone else. If you feel your password has been compromised, you must alter it immediately. titicomglobal.co.uk will not pass on your personal information to any third party.</p>\r\n<p>&nbsp;</p>\r\n<h4>Security</h4>\r\n\r\n<p>We have taken the appropriate measures to ensure that your personal information is not unlawfully processed. Titicomglobal.co.uk uses industry standard practices to safeguard the confidentiality of your personal identifiable information, including \u2018firewalls\u2019 and secure socket layers. </p>\r\n\r\n<p>During the payment process, we ask for personal information that both identifies you and enables us to communicate with you. </p>\r\n\r\n<p>We will use the information you provide only for the following purposes.</p>\r\n<ul>\r\n<li>To send you newsletters and details of offers and promotions in which we believe you will be interested. </li>\r\n<li>To improve the content design and layout of the website. </li>\r\n<li>To understand the interest and buying behavior of our registered users</li>\r\n<li>To perform other such general marketing and promotional focused on our products and activities.</li>\r\n</ul>",
+        "enable_comments": false,
+        "template_name": "",
+        "registration_required": false,
+        "sites": [
+            [
+                "localhost"
+            ]
+        ]
+    }
+},
+{
+    "model": "estore.category",
+    "pk": 1,
+    "fields": {
+        "name": "Furniture",
+        "slug": "furniture"
+    }
+},
+{
+    "model": "estore.product",
+    "pk": 1,
+    "fields": {
+        "category": 1,
+        "name": "Sofa",
+        "slug": "sofa",
+        "image": "media/products/2017/08/29/4523_Mendini_UK_2015_10_01_Carousel_03.jpg",
+        "description": "L shaped sofa",
+        "price": "10.00",
+        "stock": 10,
+        "available": true,
+        "created": "2017-08-29T10:04:28.811Z",
+        "updated": "2017-08-29T10:04:28.811Z"
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 1,
+    "fields": {
+        "order": 1,
+        "product": 1,
+        "price": "10.00",
+        "quantity": 1
+    }
+},
+{
+    "model": "orders.orderitem",
+    "pk": 2,
+    "fields": {
+        "order": 2,
+        "product": 1,
+        "price": "10.00",
+        "quantity": 2
+    }
+},
+{
+    "model": "accounts.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$36000$gCtFm2WzhZzU$BQfb0CWv5mDU/Ax0rHKTnfq6bgkGPgn41hRSMbvitzs=",
+        "last_login": "2017-09-08T13:39:34.688Z",
+        "is_superuser": true,
+        "username": "admin@admin.com",
+        "first_name": "",
+        "last_name": "",
+        "email": "admin@admin.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2017-08-29T09:59:45.775Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.user",
+    "pk": 2,
+    "fields": {
+        "password": "pbkdf2_sha256$36000$Xa7xvhKoATFu$3Ra5OzBYsfkTsTG9GJfba/D4f8i7zmPfxPCByBkpeig=",
+        "last_login": "2017-09-12T09:25:04.733Z",
+        "is_superuser": false,
+        "username": "tk@gmail.com",
+        "first_name": "",
+        "last_name": "",
+        "email": "tk@gmail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2017-08-29T10:06:55.865Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "taggit.tag",
+    "pk": 1,
+    "fields": {
+        "name": "Exposure",
+        "slug": "exposure"
+    }
+},
+{
+    "model": "taggit.tag",
+    "pk": 2,
+    "fields": {
+        "name": "Flash photography",
+        "slug": "flash-photography"
+    }
+},
+{
+    "model": "taggit.tag",
+    "pk": 3,
+    "fields": {
+        "name": "portrait",
+        "slug": "portrait"
+    }
+},
+{
+    "model": "taggit.tag",
+    "pk": 4,
+    "fields": {
+        "name": "Landscape",
+        "slug": "landscape"
+    }
+},
+{
+    "model": "taggit.tag",
+    "pk": 5,
+    "fields": {
+        "name": "Portrait",
+        "slug": "portrait_1"
+    }
+},
+{
+    "model": "taggit.tag",
+    "pk": 6,
+    "fields": {
+        "name": "exposure",
+        "slug": "exposure_1"
+    }
+},
+{
+    "model": "taggit.tag",
+    "pk": 7,
+    "fields": {
+        "name": "Lighting",
+        "slug": "lighting"
+    }
+},
+{
+    "model": "taggit.taggeditem",
+    "pk": 1,
+    "fields": {
+        "tag": 5,
+        "content_type": [
+            "blog",
+            "post"
+        ],
+        "object_id": 1
+    }
+},
+{
+    "model": "taggit.taggeditem",
+    "pk": 2,
+    "fields": {
+        "tag": 6,
+        "content_type": [
+            "blog",
+            "post"
+        ],
+        "object_id": 2
+    }
+},
+{
+    "model": "taggit.taggeditem",
+    "pk": 3,
+    "fields": {
+        "tag": 7,
+        "content_type": [
+            "blog",
+            "post"
+        ],
+        "object_id": 3
+    }
+},
+{
+    "model": "orders.order",
+    "pk": 1,
+    "fields": {
+        "user": [
+            "tk@gmail.com"
+        ],
+        "first_name": "Ca-ananay",
+        "last_name": "Usani",
+        "email": "doncanny@yahoo.com",
+        "address": "17 Balgownie Crescent",
+        "postal_code": "AB23 8EJ",
+        "city": "Aberdeen",
+        "created": "2017-08-29T15:05:55.260Z",
+        "updated": "2017-08-29T15:05:55.260Z",
+        "paid": false
+    }
+},
+{
+    "model": "orders.order",
+    "pk": 2,
+    "fields": {
+        "user": [
+            "tk@gmail.com"
+        ],
+        "first_name": "Ca-ananay",
+        "last_name": "Usani",
+        "email": "doncanny@yahoo.com",
+        "address": "17 Balgownie Crescent",
+        "postal_code": "AB23 8EJ",
+        "city": "Aberdeen",
+        "created": "2017-09-05T20:29:14.436Z",
+        "updated": "2017-09-05T20:29:14.436Z",
+        "paid": false
+    }
+},
+{
+    "model": "blog.post",
+    "pk": 1,
+    "fields": {
+        "title": "How to Take Portrait Photographs",
+        "slug": "How-to-Take-Portrait-Photographs",
+        "author": [
+            "admin@admin.com"
+        ],
+        "body": "Have you ever felt that you have far too many \"snapshots\" of your family, and that you want a more professional-looking photograph to hang on your wall? Or, perhaps you've been roped in to take a photograph for your company's magazine or website. Whatever the reason for wanting them, you don't need a photo studio and a ton of expensive lighting and camera gear to take portraits. With intelligent use of your equipment, thoughtful framing and due attention paid to lighting, anybody can take good portraits.\r\n\r\n1\r\nSet up your camera. Where circumstances permit, use a slow ISO speed (lower number). In natural light, use \"shade\" or \"cloudy\" white balance if you have it; this leads to much warmer colours.[1] See How to Take Better Photographs for further elaboration and advice.\r\n\r\n2\r\nGet the lighting right. Those fortunate enough to have a photo studio can precisely control their lighting. They also aren't reading this; the rest of us will have to go out and find the right light. What you're looking for is consistent, and diffused lighting.\r\n\r\nDirect, harsh sunlight will cause ugly shadows to be cast on the subject's face. Avoid direct, harsh sunlight from any direction. Apart from a few hours of soft light in the early morning and afternoon, direct sunlight is largely unfavourable for taking portrait photos. Looking into the sunlight will cause your subject to squint, and harsh light from behind will make it more difficult to get a consistent exposure.[2] From any other angle, it will cast harsh shadows on the face (including the horrid \"raccoon eye\" effect from direct overhead light). Overcast days are best, as clouds will diffuse the sunlight;[3] although since making your own cloud isn't typically an option, head for the shade.\r\nFill the shadows. Sometimes you'll have no choice but to take photos in direct, harsh sunlight. If your camera has a flash sync speed fast enough, use your flash to fill the shadows. If not, get your subject or an assistant to hold a piece of white or colored card to bounce the sunlight into the shadows. You could use your self-timer and hold it yourself.[4]\r\nDon't rely on your flash. That is to say, if you don't have a ton of studio lighting (and you probably don't, since you're reading this), don't count on your flash to illuminate your scene or your subject. Using it to fill in shadows is fine; depending on it as your only source of lighting is usually a bad thing. Go outside if weather permits, or get more natural light into your scene by getting closer to windows if it does not.\r\n\r\n3\r\nMake your subject comfortable. A comfortable subject will feel happier, more relaxed and less \"posed\". This will make for much better shots.\r\nGet to like your subject, and have them like you. If you have time, talk to your subject. Learn to be genuinely interested in other people. Or fake it). As one photographer writes about the famous photographer Elsa Dorfman,\r\n\r\nElsa has the same kind of studio, background, lights, and equipment as a lot of folks with more technical skill. Yet those folks aren't portrait photographers and Elsa is. What's the difference? Elsa cares about people. She is genuinely curious about people she has never met and can connect with them in just a few minutes. After a one-hour session, she knows more about her average subject's life than I do about my sister's.[5]\r\nGet them comfortable with you having a camera around, time permitting. Many, probably most, people freeze up and feel awkward the moment you pull the camera out.\r\n\r\nWould you want to be on the other end of one of these? Factor your subject's feelings in with your lens choices. This is not as strange as it might sound. A super-wide angle lens will require you to travel halfway up the nose of your subject in order to frame the photo properly. On the other hand, a subject might feel distinctly awkward at a monster Howitzer-sized telephoto pointing at them from 50 feet (15.2 m) away.\r\nGive your subject something to play with. People with something in their hands will relax their shoulders more and feel less awkward than they would if they were standing around doing nothing.[6] If you're taking body shots, have them hold something relevant to them as a person (for example, an executive might hold a book,[6] a child might hold a teddy bear, a photographer might hold a camera, and so on). If you're not taking body shots, even better; find something to keep their hands occupied. Try a stress ball or something else that gives your subject something to do.\r\n\r\n4\r\nChoose your lens and frame your shot. There are three primary ways to frame a portrait; which you will choose is a matter of artistic judgment.\r\n\r\nThe head-and-shoulders shot. If you're starting out taking portraits, this is probably the best place to start. For this, use a telephoto lens. Ignore the myth of a \"portrait lens\". There is no optimal lens focal length for portraits.[7] Longer lenses are good, because they force you to stand further back, and consequently, due to perspective, facial features like noses are de-emphasised (but see \"factor in your subject's feelings with your lens choices\" above). They also give the illusion of a shallower depth of field (i.e. blurring the background more).[8]\r\nIn accordance with the rule of thirds, have the subject's eyes one third of the way from the top of the frame. Set your camera to aperture-priority (Av) mode and use a large aperture to blur the background to make it less distracting (or if you have a \"Portrait\" mode on your camera, use that instead).\r\nThe body shot. All of the above applies. Have your subject stand at a slight angle to the camera; they will look slimmer and more relaxed.[6]\r\nThe \"environmental\" portrait, of people in action and in context. Compared to the above, this is difficult to get right and very easy to make into a mere snapshot, so tread carefully. Use a wider-angle lens for this sort of thing.\r\n\r\nZooming in \"too close\" is one of many things which you can experiment with. Everything else. The cost of experimentation with digital cameras is almost exactly zero. If you have time, try different and drastic angles, strange framing, zooming in \"too close\", and so on (see also \"ignore this article\", below).\r\n\r\n5\r\nGet your subject to maintain eye contact with the camera. Eye contact can make or break a portrait. Unless you're looking for something a bit different, such as a soulful look off the edge of the photograph, then always make sure that the person you're photographing is looking at the camera and that you're focused on the eyes.\r\n\r\n6\r\nFocus and take your pictures. If your camera has an auto-exposure and auto-focus lock, then meter and focus on the subject's face, lock, reframe, and then take your photo. Generally, the best place to focus your shot is on the person's eyes, which can be hard if you're taking the shot with a macro-lens and its' limited depth-of-field. To get sharp eyes, you may have to manually focus the camera on them, as most autofocus systems will typically focus on the nose instead.\r\n\r\n7\r\nPost-process your photo. Use advanced photo editing software like GIMP or Photoshop. Correct the colour balance and remove any haziness. You might want to sharpen features like hair and clothing; smooth out lines and imperfections in faces (this latter part might not be necessary; the sharpening of other features in the photo will make skin look smoother, because our eyes perceive sharpness and softness relative to other things in the photo). Brighten the eyes using the \"Levels\" tool. Additionally, you can add makeup to your subjects digitally.\r\n\r\n8\r\nIgnore this article. Photography is an art, not a set of methods. You can follow all these steps and still take an uninteresting photograph that you dislike. Technically \"incorrect\" photos can be the most stunning, such as those which are hugely over-exposed, harshly lit, packed with \"distracting\" background detail, strangely composed, and so on.[9] Know the rules, but know that you can, and should, break them whenever you see fit.",
+        "publish": "2017-08-29T10:05:43Z",
+        "created": "2017-08-29T10:06:04.258Z",
+        "updated": "2017-09-10T12:38:56.724Z",
+        "status": "published",
+        "image": "images/img3.jpeg"
+    }
+},
+{
+    "model": "blog.post",
+    "pk": 2,
+    "fields": {
+        "title": "CAMERA EXPOSURE",
+        "slug": "camera-exposure",
+        "author": [
+            "admin@admin.com"
+        ],
+        "body": "A photograph's exposure determines how light or dark an image will appear when it's been captured by your camera. Believe it or not, this is determined by just three camera settings: aperture, ISO and shutter speed (the \"exposure triangle\"). Mastering their use is an essential part of developing an intuition for photography.\r\n\r\nUNDERSTANDING EXPOSURE\r\n\r\nAchieving the correct exposure is a lot like collecting rain in a bucket. While the rate of rainfall is uncontrollable, three factors remain under your control: the bucket's width, the duration you leave it in the rain, and the quantity of rain you want to collect. You just need to ensure you don't collect too little (\"underexposed\"), but that you also don't collect too much (\"overexposed\"). The key is that there are many different combinations of width, time and quantity that will achieve this. For example, for the same quantity of water, you can get away with less time in the rain if you pick a bucket that's really wide. Alternatively, for the same duration left in the rain, a really narrow bucket can be used as long as you plan on getting by with less water.\r\n\r\nIn photography, the exposure settings of aperture, shutter speed and ISO speed are analogous to the width, time and quantity discussed above. Furthermore, just as the rate of rainfall was beyond your control above, so too is natural light for a photographer.",
+        "publish": "2017-09-08T13:48:56Z",
+        "created": "2017-09-08T13:50:33.264Z",
+        "updated": "2017-09-10T12:39:06.992Z",
+        "status": "published",
+        "image": "images/img6.jpeg"
+    }
+},
+{
+    "model": "blog.post",
+    "pk": 3,
+    "fields": {
+        "title": "The Top 5 Photography Lighting Facts",
+        "slug": "top-5-photography-lighting-facts",
+        "author": [
+            "admin@admin.com"
+        ],
+        "body": "1. The broader the light source, the softer the light.\r\nThe narrower the source, the harder the light. A broad light source lessens shadows, reduces contrast, suppresses texture.\r\nA narrow light source does the opposite. This is because, with a broad source, light rays hit your subject from more directions, which tends to fill in shadows and give more even illumination to the scene.\r\n\r\n2. The closer the light source, the softer the light.\r\nThe farther the source, the harder the light. This stands to reason: Move a light closer, and you make it bigger\u2014that is, broader\u2014in relation to your subject. Move it farther away, and you make it relatively smaller, and therefore more narrow.\r\nThink about the sun, which is something like 109 times the diameter of the earth\u2014pretty broad! But, at 93 million miles away, it takes up a very small portion of the sky and hence casts very hard light when falling directly on a subject.\r\n\r\n3. Diffusion scatters light, essentially making the light source broader and therefore softer.\r\nWhen clouds drift in front of the sun, shadows get less distinct. Add fog, and the shadows disappear. Clouds, overcast skies, and fog act as diffusion\u2014something that scatters the light in many directions. On overcast or foggy days, the entire sky, in effect, becomes a single very broad light source\u2014nature\u2019s softbox.\r\n\r\n4. Bouncing light acts as diffusion.\r\nAim a narrow light source at a broad, matte surface\u2014such as a wall, ceiling, or matte refiector\u2014and it not only refiects the light but also diffuses it by scattering it over a wider area.\r\nUse a shiny reflector, though, and the light will stay fairly narrow on the bounce. The most extreme type of shiny reflector\u2014a mirror\u2014will keep the light focused pretty much as narrowly in the reflection.\r\n\r\n5. The farther the light source, the more it falls off\u2014 gets dimmer on your subject.\r\nThe rule says that light falls off as the square of the distance. That sounds complicated, but isn\u2019t really. If you move a light twice as far from your subject, you end up with only one-quarter of the light on the subject.\r\nIn other words, light gets dim fast when you move it away\u2014 something to keep in mind if you\u2019re moving your lights or your subject to change the quality of the light.\r\nAlso remember that bouncing light\u2014even into a shiny reflector that keeps light directional\u2014 adds to the distance it travels.",
+        "publish": "2017-09-08T13:51:42Z",
+        "created": "2017-09-08T13:57:30.231Z",
+        "updated": "2017-09-10T12:39:20.389Z",
+        "status": "published",
+        "image": "images/img4.jpeg"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2017-08-29T10:02:59.320Z",
+        "user": [
+            "admin@admin.com"
+        ],
+        "content_type": [
+            "estore",
+            "category"
+        ],
+        "object_id": "1",
+        "object_repr": "Furniture",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2017-08-29T10:04:28.962Z",
+        "user": [
+            "admin@admin.com"
+        ],
+        "content_type": [
+            "estore",
+            "product"
+        ],
+        "object_id": "1",
+        "object_repr": "Sofa",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2017-08-29T10:06:04.260Z",
+        "user": [
+            "admin@admin.com"
+        ],
+        "content_type": [
+            "blog",
+            "post"
+        ],
+        "object_id": "1",
+        "object_repr": "First Blog",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2017-09-04T09:03:34.049Z",
+        "user": [
+            "admin@admin.com"
+        ],
+        "content_type": [
+            "blog",
+            "post"
+        ],
+        "object_id": "1",
+        "object_repr": "First Blog",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"image\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+        "action_time": "2017-09-04T09:30:27.379Z",
+        "user": [
+            "admin@admin.com"
+        ],
+        "content_type": [
+            "blog",
+            "post"
+        ],
+        "object_id": "1",
+        "object_repr": "First Blog",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"image\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+        "action_time": "2017-09-04T09:34:00.553Z",
+        "user": [
+            "admin@admin.com"
+        ],
+        "content_type": [
+            "blog",
+            "post"
+        ],
+        "object_id": "1",
+        "object_repr": "First Blog",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"image\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+        "action_time": "2017-09-04T09:58:37.451Z",
+        "user": [
+            "admin@admin.com"
+        ],
+        "content_type": [
+            "sites",
+            "site"
+        ],
+        "object_id": "2",
+        "object_repr": "localhost",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+        "action_time": "2017-09-04T10:00:56.470Z",
+        "user": [
+            "admin@admin.com"
+        ],
+        "content_type": [
+            "flatpages",
+            "flatpage"
+        ],
+        "object_id": "1",
+        "object_repr": "/pages/terms/ -- Terms and Conditions",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+        "action_time": "2017-09-04T10:07:00.467Z",
+        "user": [
+            "admin@admin.com"
+        ],
+        "content_type": [
+            "flatpages",
+            "flatpage"
+        ],
+        "object_id": "2",
+        "object_repr": "/pages/policy/ -- Privacy Policy",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+        "action_time": "2017-09-08T13:47:13.467Z",
+        "user": [
+            "admin@admin.com"
+        ],
+        "content_type": [
+            "blog",
+            "post"
+        ],
+        "object_id": "1",
+        "object_repr": "How to Take Portrait Photographs",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"title\", \"slug\", \"body\", \"image\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+        "action_time": "2017-09-08T13:50:33.328Z",
+        "user": [
+            "admin@admin.com"
+        ],
+        "content_type": [
+            "blog",
+            "post"
+        ],
+        "object_id": "2",
+        "object_repr": "CAMERA EXPOSURE",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+        "action_time": "2017-09-08T13:57:30.995Z",
+        "user": [
+            "admin@admin.com"
+        ],
+        "content_type": [
+            "blog",
+            "post"
+        ],
+        "object_id": "3",
+        "object_repr": "The Top 5 Photography Lighting Facts",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+        "action_time": "2017-09-08T15:42:58.593Z",
+        "user": [
+            "admin@admin.com"
+        ],
+        "content_type": [
+            "flatpages",
+            "flatpage"
+        ],
+        "object_id": "2",
+        "object_repr": "/pages/policy/ -- Privacy Policy",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"content\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+        "action_time": "2017-09-08T15:49:03.273Z",
+        "user": [
+            "admin@admin.com"
+        ],
+        "content_type": [
+            "flatpages",
+            "flatpage"
+        ],
+        "object_id": "1",
+        "object_repr": "/pages/terms/ -- Terms of Use",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"title\", \"content\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+        "action_time": "2017-09-08T17:28:58.501Z",
+        "user": [
+            "admin@admin.com"
+        ],
+        "content_type": [
+            "flatpages",
+            "flatpage"
+        ],
+        "object_id": "2",
+        "object_repr": "/pages/policy/ -- Privacy Policy",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"content\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+        "action_time": "2017-09-08T18:33:47.185Z",
+        "user": [
+            "admin@admin.com"
+        ],
+        "content_type": [
+            "flatpages",
+            "flatpage"
+        ],
+        "object_id": "2",
+        "object_repr": "/pages/policy/ -- Privacy Policy",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"content\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+        "action_time": "2017-09-08T18:36:05.224Z",
+        "user": [
+            "admin@admin.com"
+        ],
+        "content_type": [
+            "flatpages",
+            "flatpage"
+        ],
+        "object_id": "2",
+        "object_repr": "/pages/policy/ -- Privacy Policy",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"content\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+        "action_time": "2017-09-08T18:38:56.751Z",
+        "user": [
+            "admin@admin.com"
+        ],
+        "content_type": [
+            "flatpages",
+            "flatpage"
+        ],
+        "object_id": "1",
+        "object_repr": "/pages/terms/ -- Terms of Use",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"content\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+        "action_time": "2017-09-08T18:42:45.590Z",
+        "user": [
+            "admin@admin.com"
+        ],
+        "content_type": [
+            "flatpages",
+            "flatpage"
+        ],
+        "object_id": "2",
+        "object_repr": "/pages/policy/ -- Privacy Policy",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"content\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 20,
+    "fields": {
+        "action_time": "2017-09-08T18:43:35.223Z",
+        "user": [
+            "admin@admin.com"
+        ],
+        "content_type": [
+            "flatpages",
+            "flatpage"
+        ],
+        "object_id": "1",
+        "object_repr": "/pages/terms/ -- Terms of Use",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"content\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 21,
+    "fields": {
+        "action_time": "2017-09-08T18:45:06.345Z",
+        "user": [
+            "admin@admin.com"
+        ],
+        "content_type": [
+            "flatpages",
+            "flatpage"
+        ],
+        "object_id": "2",
+        "object_repr": "/pages/policy/ -- Privacy Policy",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"content\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 22,
+    "fields": {
+        "action_time": "2017-09-08T18:45:38.139Z",
+        "user": [
+            "admin@admin.com"
+        ],
+        "content_type": [
+            "flatpages",
+            "flatpage"
+        ],
+        "object_id": "1",
+        "object_repr": "/pages/terms/ -- Terms of Use",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"content\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 23,
+    "fields": {
+        "action_time": "2017-09-08T19:07:48.107Z",
+        "user": [
+            "admin@admin.com"
+        ],
+        "content_type": [
+            "flatpages",
+            "flatpage"
+        ],
+        "object_id": "2",
+        "object_repr": "/pages/policy/ -- Privacy Policy",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"content\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 24,
+    "fields": {
+        "action_time": "2017-09-08T19:08:13.021Z",
+        "user": [
+            "admin@admin.com"
+        ],
+        "content_type": [
+            "flatpages",
+            "flatpage"
+        ],
+        "object_id": "1",
+        "object_repr": "/pages/terms/ -- Terms of Use",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"content\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 25,
+    "fields": {
+        "action_time": "2017-09-10T12:36:42.315Z",
+        "user": [
+            "admin@admin.com"
+        ],
+        "content_type": [
+            "taggit",
+            "tag"
+        ],
+        "object_id": "1",
+        "object_repr": "Exposure",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 26,
+    "fields": {
+        "action_time": "2017-09-10T12:37:00.098Z",
+        "user": [
+            "admin@admin.com"
+        ],
+        "content_type": [
+            "taggit",
+            "tag"
+        ],
+        "object_id": "2",
+        "object_repr": "Flash photography",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 27,
+    "fields": {
+        "action_time": "2017-09-10T12:37:17.215Z",
+        "user": [
+            "admin@admin.com"
+        ],
+        "content_type": [
+            "taggit",
+            "tag"
+        ],
+        "object_id": "3",
+        "object_repr": "portrait",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 28,
+    "fields": {
+        "action_time": "2017-09-10T12:37:28.112Z",
+        "user": [
+            "admin@admin.com"
+        ],
+        "content_type": [
+            "taggit",
+            "tag"
+        ],
+        "object_id": "4",
+        "object_repr": "Landscape",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 29,
+    "fields": {
+        "action_time": "2017-09-10T12:38:56.760Z",
+        "user": [
+            "admin@admin.com"
+        ],
+        "content_type": [
+            "blog",
+            "post"
+        ],
+        "object_id": "1",
+        "object_repr": "How to Take Portrait Photographs",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"tags\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 30,
+    "fields": {
+        "action_time": "2017-09-10T12:39:07.007Z",
+        "user": [
+            "admin@admin.com"
+        ],
+        "content_type": [
+            "blog",
+            "post"
+        ],
+        "object_id": "2",
+        "object_repr": "CAMERA EXPOSURE",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"tags\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 31,
+    "fields": {
+        "action_time": "2017-09-10T12:39:20.399Z",
+        "user": [
+            "admin@admin.com"
+        ],
+        "content_type": [
+            "blog",
+            "post"
+        ],
+        "object_id": "3",
+        "object_repr": "The Top 5 Photography Lighting Facts",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"tags\"]}}]"
+    }
+}
+]
