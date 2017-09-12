@@ -1,5 +1,5 @@
 from django.conf.urls import url
-from estore.views import product_list, product_detail
+from . import views
 
 
 urlpatterns = [

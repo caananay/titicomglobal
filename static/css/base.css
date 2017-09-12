@@ -1,0 +1,157 @@
+body { 
+    margin:0;
+   /* padding-top:70px;*/
+    font-family:helvetica, sans-serif; 
+}
+
+a { 
+    color:#00abff;
+    text-decoration:none; 
+}
+
+h1 { 
+    font-weight:normal;
+    border-bottom:1px solid #bbb;
+    padding:0 0 10px 0;
+}
+
+.center {
+    text-align: center;
+}
+
+h2 {
+    font-weight:normal;
+    margin:30px 0 0;
+}
+
+.top-pad {
+    padding-top: 85px;
+    padding-bottom: 85px;
+}
+
+.shop-pad {
+    padding-top: 85px;
+}
+
+.shop-bottom {
+    padding-bottom: 85px;
+}
+
+p.date { 
+    color:#ccc;
+    font-family: georgia, serif;
+    font-size: 12px;
+    font-style: italic; 
+}
+
+#home-slider {
+    position: relative;
+}
+
+#footer {
+    position: relative;
+    display: block;
+}
+
+#home-slider img {
+    height: 700px;
+    width: 100%;
+}
+
+#login-message {
+    position: absolute;
+    top: 90px;
+    left: 0;
+    z-index: 1;
+    background-color: transparent;
+    color: #fff;
+    font-weight: bold;
+}
+
+.alert {
+    margin-bottom: 0; 
+    border: 1px solid transparent;
+    position: absolute;
+    top: 110px;
+    right: 0;
+    z-index: 1;
+    width: 100%;
+}
+
+/**  Footer Navigation **/
+footer {
+  background: #586D74;
+  color: white;
+  font-size: .8em;
+  padding: 20px 0 40px 0;
+}
+
+footer a {
+  color: #E0E6AE;
+}
+
+footer a:hover {
+  color: #EEC856 !important;
+}
+
+footer .phone {
+  font-size: 1.4em;
+  font-weight: 700;
+  color: #E0E6AE;
+}
+
+footer .navbar {
+  margin-bottom: 0;
+  min-height: 0;
+}
+
+footer .navbar-default {
+  background: transparent;
+  border: none;
+  margin-right: 40px;
+}
+
+footer .navbar-nav>li a {
+  padding-top: 0;
+  padding-bottom: 0;
+  text-decoration: underline;
+  color: #EEC856 !important;
+}
+
+/**  Header Navigation **/
+
+header .navbar {
+  padding: 10px 0;
+}
+
+header .navbar-default {
+  background: rgba(0, 0, 0, 0.3);
+  border-color: transparent;
+}
+
+header .navbar-default .navbar-nav a:hover {
+  color: #EEC856;
+  background-color: transparent;
+}
+
+header .navbar-default .navbar-nav .active a {
+  font-weight: 700;
+  color: #EEC856;
+  background: transparent;
+  border-bottom: 4px solid #EEC856;
+  text-shadow: none;
+}
+
+header .navbar-default .navbar-nav .active a:hover {
+  color: #E15D5F;
+  background: transparent;
+  text-shadow: none;
+}
+
+/**  Navbar Toggle **/
+@media only screen
+and (max-width: 768px) {
+  header .navbar-collapse.in {
+    background-color: rgba(0,0,0, .5);
+  }
+}

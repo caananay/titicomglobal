@@ -1,14 +1,16 @@
 {% extends "base.html" %}
+{% load staticfiles %}
 
     {% block title %}Titicom shop{% endblock %}
     {% block head_css %}
-    <link href="{% static "css/store.css" %}" rel="stylesheet">
+        <link href="{% static 'css/store.css' %}" rel="stylesheet">
     {% endblock %}
 
 
 {% block estore_header %}
+<div id="shop-header" class="shop-pad">
     <div id="header">
-        <a href="/" class="logo">My shop</a>
+        <a href="/" class="logo">Titicom shop</a>
     </div>
     <div id="subheader">
         <div class="cart">
@@ -16,7 +18,7 @@
                 {% if cart|length > 0 %}
                     Your cart: 
                     <a href="{% url "cart:cart_detail" %}">
-                        {{ total_items }} item{{ total_items|pluralize }}, ${{ cart.get_total_price }}
+                        {{ total_items }} item{{ total_items|pluralize }}, £{{ cart.get_total_price }}
                     </a>
                 {% else %}
                     Your cart is empty.
@@ -24,4 +26,5 @@
             {% endwith %}
         </div>
     </div>
+</div>
 {% endblock %}

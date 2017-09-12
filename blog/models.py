@@ -3,8 +3,9 @@ from __future__ import unicode_literals
 
 from django.db import models
 from django.utils import timezone
-from django.contrib.auth.models import User
+from django.conf import settings
 from django.core.urlresolvers import reverse
+from taggit.managers import TaggableManager
 # Create your models here.
 class PublishedManager(models.Manager):
     def get_queryset(self):
@@ -18,15 +19,18 @@ class Post(models.Model):
     )
     title = models.CharField(max_length=250)
     slug = models.SlugField(max_length=250, unique_for_date='publish')
-    author = models.ForeignKey(User, related_name='blog_posts')
+    author = models.ForeignKey(settings.AUTH_USER_MODEL, related_name='blog_posts')
     body = models.TextField()
     publish = models.DateTimeField(default=timezone.now)
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
     status = models.CharField(max_length=10, choices=STATUS_CHOICES, default='draft')
+    image = models.ImageField(upload_to="images", blank=True, null=True)
 
     objects = models.Manager() # The default manager.
     published = PublishedManager() # The Dahl-specific manager.
+
+    tags = TaggableManager()
 
     class Meta:
         ordering = ('-publish',)

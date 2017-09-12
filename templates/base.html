@@ -4,8 +4,8 @@
 <head>
     <title>{% block title %}{% endblock %}</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.6/cerulean/bootstrap.min.css">
-    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
      {% block head_css %}{% endblock %}
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
@@ -23,44 +23,59 @@
               </div><!-- navbar-header -->
               <div class="collapse navbar-collapse" id="collapse">
                 <ul class="nav navbar-nav navbar-right">
-                  <li><a href="/">Home</a></li>
+                  <li class="active"><a href="/">Home</a></li>
                   <li><a href="/blog/">Blog</a></li>
-                  <li><a href="#services">eStore</a></li>
-                  <li><a href="#staff">Login</a></li>
-                  <li><a href="#testimonials">Register</a></li>
-                  <li><a href="#Logout">Logout</a></li>
+                  <li><a href="/estore/">eStore</a></li>
+                  {% if user.is_authenticated %}
+                  <li><a href="{% url 'logout' %}">Logout</a></li>
+                  {% else %}
+                  <li><a href="{% url 'login' %}">Login</a></li>
+                  <li><a href="{% url 'register' %}">Register</a></li>
+                  {% endif %}
                 </ul>        
               </div><!-- collapse navbar-collapse -->
             </div><!-- container -->
         </nav>
     </header>
     {% block estore_header %}{% endblock %}
-    <div class="container">
-        {% block content %}
-        {% endblock %}
-       
-    </div><!-- container -->
+       {% if messages %}
+        <div class="alert alert-success">
+            <div class="messages">
+                {% for message in messages %}
+                    {{ message }}
+                {% endfor %}
+            </div>
+        </div>
+        {% endif %}
 
-    <footer>
+       {% block content %}
+        {% endblock %}
+    
+       
+    <footer id="footer"> 
+      {% block footer %}
         <div class="content container-fluid">
-        <div class="row">
-          <div class="col-sm-6">
-            <p>Call us at <span class="phone">01-7685-8763</span></p>
-            <p>All contents &copy; 2017 <a href="#">Titicom Global</a>. All rights reserved.</p>    
-          </div><!-- col-sm-6 -->
-          <div class="col-sm-6">
-            <nav class="navbar navbar-default" role="navigation">
-              <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">Terms of use</a></li>
-                <li><a href="#">Privacy policy</a></li>
-              </ul>
-            </nav>        
-          </div><!-- col-sm-6 -->
-        </div><!-- row -->
+          <div class="row">
+            <div class="col-sm-6">
+              <p>Call us at <span class="phone">01-7685-8763</span></p>
+              <p>All contents &copy; 2017 <a href="/">Titicom Global</a>. All rights reserved.</p>    
+            </div><!-- col-sm-6 -->
+            <div class="col-sm-6">
+              <nav class="navbar navbar-default" role="navigation">
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a href="/pages/terms/">Terms of use</a></li>
+                  <li><a href="/pages/policy/">Privacy policy</a></li>
+                </ul>
+              </nav>        
+            </div><!-- col-sm-6 -->
+          </div><!-- row -->
         </div><!-- content container -->
+      {% endblock %}
     </footer>
+
      <!--script references-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="{% static 'js/script.js' %}"></script>
 </body>
 </html>

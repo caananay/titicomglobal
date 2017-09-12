@@ -1,38 +1,10 @@
-body { 
-    margin:0;
-    padding-top:70px;
-    font-family:helvetica, sans-serif; 
-}
-
-a { 
-    color:#00abff;
-    text-decoration:none; 
-}
-
-h1 { 
-    font-weight:normal;
-    border-bottom:1px solid #bbb;
-    padding:0 0 10px 0;
-}
-
-h2 {
-    font-weight:normal;
-    margin:30px 0 0;
-}
-
-/**  Header Navigation **/
-
-header .navbar {
-  padding: 10px 0;
-}
-
-#content { 
+#content1 { 
     float:left;
     width:60%;
     padding:0 0 0 30px; 
 }
 
-#sidebar { 
+#sidebar1 { 
     float:right;
     width:30%;
     padding:10px;
@@ -40,11 +12,14 @@ header .navbar {
     height:100%;
 }
 
-p.date { 
-    color:#ccc;
-    font-family: georgia, serif;
-    font-size: 12px;
-    font-style: italic; 
+#blog img {
+    width: auto;
+    height: 280px;
+}
+
+.story-img {
+    margin-top: 25%;
+    display: block;
 }
 
 /* pagination */
@@ -82,14 +57,6 @@ input[type=submit] {
     float:left;
     clear:both;
     padding-left:10px; 
-}
-
-/**  Navbar Toggle **/
-@media only screen
-and (max-width: 768px) {
-  header .navbar-collapse.in {
-    background-color: rgba(0,0,0, .5);
-  }
 }
 
 /* comments */

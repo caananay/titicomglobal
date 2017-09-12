@@ -1,17 +1,35 @@
-{% extends "base.html" %}
+{% extends "blog/blogbase.html" %}
+{% load bootstrap_tags %}
+{% load static %}
 
 {% block title %}Share a post{% endblock %}
 
-{% block content %}
-    {% if sent %}
-        <h1>E-mail successfully sent</h1>
-        <p>"{{ post.title }}" was successfully sent by e-mail.</p>
-    {% else %}
-        <h1>Share "{{ post.title }}" by e-mail</h1>
-        <form action="." method="post">
-            {{ form.as_p }}
-            {% csrf_token %}
-            <input type="submit" value="Send e-mail">
-        </form>
-    {% endif %}
-{% endblock %}
+{% block blog_header %}
+                
+            {% endblock %}
+   {% block content %}
+         <div id="blog">
+                <img src="{% static 'img/img2.png' %}" class="img-responsive">
+        </div>
+        <div class="container">
+            {% if sent %}
+                <h3>E-mail successfully sent</h3>
+                <p>"{{ post.title }}" was successfully sent by e-mail.</p>
+            {% else %}
+
+            <div class="row">
+                <div class="col-sm-4"></div>
+                <div class="col-sm-4">
+                    <h3>Share "{{ post.title }}" by e-mail</h3>
+
+                    <form action="." method="post">
+                        {{ form| as_bootstrap }}
+                        {% csrf_token %}
+                        <input type="submit" value="Send e-mail">
+                    </form>
+                </div>
+                <div class="col-sm-4"></div>
+            </div>
+            {% endif %}
+        </div>
+    {% endblock %}
