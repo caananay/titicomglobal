@@ -172,14 +172,6 @@
 },
 {
     "model": "taggit.tag",
-    "pk": 6,
-    "fields": {
-        "name": "exposure",
-        "slug": "exposure_1"
-    }
-},
-{
-    "model": "taggit.tag",
     "pk": 7,
     "fields": {
         "name": "Lighting",
@@ -190,7 +182,7 @@
     "model": "taggit.taggeditem",
     "pk": 1,
     "fields": {
-        "tag": 5,
+        "tag": 3,
         "content_type": [
             "blog",
             "post"
@@ -202,7 +194,7 @@
     "model": "taggit.taggeditem",
     "pk": 2,
     "fields": {
-        "tag": 6,
+        "tag": 3,
         "content_type": [
             "blog",
             "post"
@@ -214,7 +206,7 @@
     "model": "taggit.taggeditem",
     "pk": 3,
     "fields": {
-        "tag": 7,
+        "tag": 4,
         "content_type": [
             "blog",
             "post"
