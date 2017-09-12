@@ -172,14 +172,6 @@
 },
 {
     "model": "taggit.tag",
-    "pk": 5,
-    "fields": {
-        "name": "Portrait",
-        "slug": "portrait_1"
-    }
-},
-{
-    "model": "taggit.tag",
     "pk": 6,
     "fields": {
         "name": "exposure",
