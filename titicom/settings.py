@@ -26,7 +26,7 @@ SECRET_KEY = '=-ri#6^!q&qe@osucvqyd^)t0fzf1+ru53c^%two50ye%d)++m'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'titicom-global.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'titicomglobal.herokuapp.com']
 
 LOGIN_URL = '/login'
 # Application definition
@@ -165,7 +165,7 @@ EMAIL_USE_TLS = True
 CART_SESSION_ID = 'cart'
 
 #PayPal Settings
-SITE_URL= 'titicom-global.herokuapp.com'
-PAYPAL_NOTIFY_URL = 'titicom-global.herokuapp.com'
+SITE_URL= 'titicomglobal.herokuapp.com'
+PAYPAL_NOTIFY_URL = 'titicomglobal.herokuapp.com'
 PAYPAL_RECEIVER_EMAIL ='doncanny-facilitator@yahoo.com'
 # PAYPAL_TEST= True
