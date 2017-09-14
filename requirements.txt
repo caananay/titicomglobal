@@ -25,6 +25,7 @@ MySQL-python==1.2.5
 pbr==3.1.1
 Pillow==2.9.0
 pycparser==2.18
+psycopg2==2.7.3.1
 Pyphen==0.9.4
 python-dateutil==2.6.0
 pytz==2017.2
