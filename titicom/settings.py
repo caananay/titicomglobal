@@ -139,7 +139,7 @@ USE_TZ = True
 #DISQUS SETTINGS
 DISQUS_API_KEY = 'q8wGpoJaVua1F9QaQaaDoAFDPqpDiEUZF6nlogdAd5rJJwOXwXZYiKaxj3pwJ3Sr'
 DISQUS_WEBSITE_SHORTNAME = 'titicomglobalblog'
-SITE_ID = 2
+SITE_ID = 3
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
