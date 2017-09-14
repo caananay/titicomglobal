@@ -27,7 +27,7 @@ def post_list(request, tag_slug=None):
     except EmptyPage:
     	#if page is out of range deliver last page of results
     	posts = paginator.page(paginator.num_pages)
-    return render(request, 'blog/post/list.html', {'page':page, 'posts':posts, 'tag':tag})
+    return render(request, 'blog/post/list.html', {'page':page, 'posts':posts, 'tag':tag, 'active_blog': True})
 
 def post_detail(request, year, month, day, post):
 	post = get_object_or_404(Post, slug=post,
@@ -35,7 +35,7 @@ def post_detail(request, year, month, day, post):
 		publish__year=year,
 		publish__month=month,
 		publish__day=day)
-	return render(request, 'blog/post/detail.html', {'post':post})
+	return render(request, 'blog/post/detail.html', {'post':post, 'active_blog': True})
 
 
 def post_share(request, post_id):
@@ -58,4 +58,4 @@ def post_share(request, post_id):
         form = EmailPostForm()
     return render(request, 'blog/post/share.html', {'post': post,
                                                     'form': form,
-                                                    'sent': sent})
+                                                    'sent': sent,  'active_blog': True})

@@ -27,7 +27,7 @@ def register(request):
     else:
         form = UserRegistrationForm()
  
-    args = {'form': form}
+    args = {'form': form, 'active_register': True}
     args.update(csrf(request))
  
     return render(request, 'register.html', args)
@@ -50,7 +50,7 @@ def login(request):
         form = UserLoginForm()
         request.session['next'] = request.GET.get('next',reverse('index'))
  
-    args = {'form':form}
+    args = {'form':form, 'active_login': True}
     args.update(csrf(request))
     return render(request, 'login.html', args)
 

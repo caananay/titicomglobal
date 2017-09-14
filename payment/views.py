@@ -12,12 +12,12 @@ from django.views.decorators.csrf import csrf_exempt
 
 @csrf_exempt
 def payment_done(request):
-    return render(request, 'payment/done.html')
+    return render(request, 'payment/done.html', {'active_estore': True})
 
 
 @csrf_exempt
 def payment_canceled(request):
-    return render(request, 'payment/canceled.html')
+    return render(request, 'payment/canceled.html', {'active_estore': True})
     
 
 def payment_process(request):
@@ -37,4 +37,4 @@ def payment_process(request):
     }
     form = PayPalPaymentsForm(initial=paypal_dict)
     return render(request, 'payment/process.html', {'order': order,
-                                                    'form':form})
+                                                    'form':form, 'active_estore': True})

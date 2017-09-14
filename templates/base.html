@@ -24,14 +24,14 @@
               </div><!-- navbar-header -->
               <div class="collapse navbar-collapse" id="collapse">
                 <ul class="nav navbar-nav navbar-right">
-                  <li class="active"><a href="/">Home</a></li>
-                  <li><a href="/blog/">Blog</a></li>
-                  <li><a href="/estore/">eStore</a></li>
+                  <li {% if active_home %}class="active"{% endif %}><a href="/">Home</a></li>
+                  <li {% if active_blog %}class="active"{% endif %}><a href="/blog/">Blog</a></li>
+                  <li {% if active_estore %}class="active"{% endif %}><a href="/estore/">eStore</a></li>
                   {% if user.is_authenticated %}
                   <li><a href="{% url 'logout' %}">Logout</a></li>
                   {% else %}
-                  <li><a href="{% url 'login' %}">Login</a></li>
-                  <li><a href="{% url 'register' %}">Register</a></li>
+                  <li {% if active_login %}class="active"{% endif %}><a href="{% url 'login' %}">Login</a></li>
+                  <li {% if active_register %}class="active"{% endif %}><a href="{% url 'register' %}">Register</a></li>
                   {% endif %}
                 </ul>        
               </div><!-- collapse navbar-collapse -->
