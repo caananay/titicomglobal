@@ -24,7 +24,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '=-ri#6^!q&qe@osucvqyd^)t0fzf1+ru53c^%two50ye%d)++m'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['127.0.0.1', 'titicomglobal.herokuapp.com']
 
@@ -137,7 +137,7 @@ USE_L10N = True
 USE_TZ = True
 
 #DISQUS SETTINGS
-DISQUS_API_KEY = 'q8wGpoJaVua1F9QaQaaDoAFDPqpDiEUZF6nlogdAd5rJJwOXwXZYiKaxj3pwJ3Sr'
+# DISQUS_API_KEY = 'q8wGpoJaVua1F9QaQaaDoAFDPqpDiEUZF6nlogdAd5rJJwOXwXZYiKaxj3pwJ3Sr'
 DISQUS_WEBSITE_SHORTNAME = 'titicomglobalblog'
 SITE_ID = 3
 

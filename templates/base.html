@@ -49,12 +49,14 @@
         </div>
         {% endif %}
 
+
        {% block content %}
         {% endblock %}
     
        
-    <footer id="footer"> 
+   
       {% block footer %}
+       <footer id="footer"> 
         <div class="content container-fluid">
           <div class="row">
             <div class="col-sm-6">
@@ -71,12 +73,13 @@
             </div><!-- col-sm-6 -->
           </div><!-- row -->
         </div><!-- content container -->
+         </footer>
       {% endblock %}
-    </footer>
+   
 
      <!--script references-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="{% static 'js/script.js' %}"></script>
+   
 </body>
 </html>

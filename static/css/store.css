@@ -117,8 +117,8 @@ ul.errorlist {
 
 #shop-header {
      background: url(../img/images1.jpg);
-    height: 200px;
-    width: auto;
+     background-repeat: no-repeat;
+     background-size: cover;
 }
 
 #header {

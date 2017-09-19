@@ -12,9 +12,12 @@
     height:100%;
 }
 
-#blog img {
-    width: auto;
-    height: 280px;
+#blog {
+    padding-top: 185px;
+    background: url(../img/img2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .story-img {
