@@ -157,8 +157,8 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 CART_SESSION_ID = 'cart'
 
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = ''
-EMAIL_HOST_PASSWORD = ''
+EMAIL_HOST_USER = 'titiphotos593@gmail.com'
+EMAIL_HOST_PASSWORD = 'Bl@zetr@il'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 
