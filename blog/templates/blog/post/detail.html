@@ -13,7 +13,7 @@
 		<h1>{{ post.title }}</h1>
 		<p class="date">Published {{ post.publish }} by {{ post.author }}</p>
 		{% if post.image %}
-          <img src="/media/{{ post.image}}" class="img-responsive">
+          <img src="{{ post.image.url}}" class="img-responsive">
       	{% endif %}
 		{{ post.body|linebreaks }}
 		<p><button class="btn btn-default" onclick="location.href='/blog'">Back to Blog</button> </p>
