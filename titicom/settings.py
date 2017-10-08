@@ -51,6 +51,7 @@ INSTALLED_APPS = [
     'payment',
     'accounts',
     'taggit',
+    'storages',
 ]
 
 MIDDLEWARE = [
@@ -88,15 +89,15 @@ WSGI_APPLICATION = 'titicom.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
-DATABASES = {
-    'default': dj_database_url.config('DATABASE_URL')
-}
 # DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-#     }
+#     'default': dj_database_url.config('DATABASE_URL')
 # }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    }
+}
 
 AUTH_USER_MODEL = 'accounts.User'
 
@@ -137,9 +138,26 @@ USE_L10N = True
 USE_TZ = True
 
 #DISQUS SETTINGS
-# DISQUS_API_KEY = 'q8wGpoJaVua1F9QaQaaDoAFDPqpDiEUZF6nlogdAd5rJJwOXwXZYiKaxj3pwJ3Sr'
+# DISQUS_API_KEY = 'c2j7Kdsxd92hqKrKuk03B5OlZB3nsaIcX38D70QAUGhAws412mpqDZf91nUjo3zC'
 DISQUS_WEBSITE_SHORTNAME = 'titicomglobalblog'
-SITE_ID = 3
+SITE_ID = 2
+
+#AWS settings
+AWS_STORAGE_BUCKET_NAME = 'titicomglobal'
+AWS_S3_REGION_NAME = 'eu-west-2'  # e.g. us-east-2
+AWS_ACCESS_KEY_ID = 'AKIAJ62EW2YC6V6PBGNA'
+AWS_SECRET_ACCESS_KEY = 'QXhdZZ8Vl2IYpoAz6xOu82TVqmg/FpO1DL66Nc+o'
+
+# Tell django-storages the domain to use to refer to static files.
+AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com' % AWS_STORAGE_BUCKET_NAME
+
+# Tell the staticfiles app to use S3Boto3 storage when writing the collected static files (when
+# you run `collectstatic`).
+STATICFILES_LOCATION = 'static'
+STATICFILES_STORAGE = 'custom_storages.StaticStorage'
+
+MEDIAFILES_LOCATION = 'media'
+DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/

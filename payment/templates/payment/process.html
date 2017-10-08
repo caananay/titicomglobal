@@ -5,15 +5,7 @@
 {% block content %}
 <div class="container shop-bottom">
     <h1>Pay using PayPal</h1>
-    <div class="order-info">
-        <h3>Your order</h3>
-        <ul>
-            {% for item in cart %}
-                <li>{{ item.quantity }}x {{ item.product.name }} <span>${{ item.total_price }}</span></li>
-            {% endfor %}
-        </ul>
-        <p>Total: ${{ cart.get_total_price }}</p>
-    </div>
+
     {{ form.render }}
 </div>
 {% endblock %}

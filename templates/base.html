@@ -21,6 +21,12 @@
                   <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="#featured">Titicom Global <span class="subhead">Photography</span></a>
+
+                <div id="login-message">
+                  {% if user.is_authenticated %}
+                  <p class="login-message">You are logged in as {{ user.email }} </p>
+                  {% endif %}
+                </div>
               </div><!-- navbar-header -->
               <div class="collapse navbar-collapse" id="collapse">
                 <ul class="nav navbar-nav navbar-right">

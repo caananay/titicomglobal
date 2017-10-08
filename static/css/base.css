@@ -66,12 +66,17 @@ p.date {
 
 #login-message {
     position: absolute;
-    top: 90px;
-    left: 0;
+    top: 49px;
+    left: 50px;
     z-index: 1;
     background-color: transparent;
-    color: #fff;
+}
+
+.login-message {
     font-weight: bold;
+    font-size: 12px;
+    color: #91e4bf;
+    font-style: italic;
 }
 
 .alert {
