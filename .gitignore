@@ -3,3 +3,4 @@
 *.sqlite3
 *.pyc
 ngrok
+secret_keys.py

@@ -57,7 +57,7 @@ def post_share(request, post_id):
     else:
         
         if request.user.is_authenticated():
-            form = EmailPostForm({'email': request.user.email})
+            form = EmailPostForm(initial = {'email': request.user.email})
         else:
             form = EmailPostForm()
 

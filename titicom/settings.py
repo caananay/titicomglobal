@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 
 import os
 import dj_database_url
+from secret_keys import *
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -89,15 +90,15 @@ WSGI_APPLICATION = 'titicom.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
-DATABASES = {
-    'default': dj_database_url.config('DATABASE_URL')
-}
 # DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-#     }
+#     'default': dj_database_url.config('DATABASE_URL')
 # }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    }
+}
 
 AUTH_USER_MODEL = 'accounts.User'
 
@@ -140,16 +141,7 @@ USE_TZ = True
 #DISQUS SETTINGS
 # DISQUS_API_KEY = 'c2j7Kdsxd92hqKrKuk03B5OlZB3nsaIcX38D70QAUGhAws412mpqDZf91nUjo3zC'
 DISQUS_WEBSITE_SHORTNAME = 'titicomglobalblog'
-SITE_ID = 3
-
-#AWS settings
-AWS_STORAGE_BUCKET_NAME = 'titicomglobal'
-AWS_S3_REGION_NAME = 'eu-west-2'  # e.g. us-east-2
-AWS_ACCESS_KEY_ID = 'AKIAJ62EW2YC6V6PBGNA'
-AWS_SECRET_ACCESS_KEY = 'QXhdZZ8Vl2IYpoAz6xOu82TVqmg/FpO1DL66Nc+o'
-
-# Tell django-storages the domain to use to refer to static files.
-AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com' % AWS_STORAGE_BUCKET_NAME
+SITE_ID = 2
 
 # Tell the staticfiles app to use S3Boto3 storage when writing the collected static files (when
 # you run `collectstatic`).
@@ -171,14 +163,6 @@ STATICFILES_DIRS = (
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-
-CART_SESSION_ID = 'cart'
-
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'titiphotos593@gmail.com'
-EMAIL_HOST_PASSWORD = 'Bl@zetr@il'
-EMAIL_PORT = 587
-EMAIL_USE_TLS = True
 
 CART_SESSION_ID = 'cart'
 

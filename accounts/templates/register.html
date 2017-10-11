@@ -7,6 +7,7 @@
 		<div class="col-sm-4">
 		    <form role="form" method="post" action="{% url 'register' %}">
 		        <legend>Create a new account</legend>
+		        <p>Register to enable checkout on our website.</p>
 		        {% csrf_token %}
 		        {{ form | as_bootstrap }}
 		        <div class="form-group">
