@@ -90,15 +90,15 @@ WSGI_APPLICATION = 'titicom.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
-# DATABASES = {
-#     'default': dj_database_url.config('DATABASE_URL')
-# }
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
+    'default': dj_database_url.config('DATABASE_URL')
 }
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#     }
+# }
 
 AUTH_USER_MODEL = 'accounts.User'
 
@@ -141,7 +141,7 @@ USE_TZ = True
 #DISQUS SETTINGS
 # DISQUS_API_KEY = 'c2j7Kdsxd92hqKrKuk03B5OlZB3nsaIcX38D70QAUGhAws412mpqDZf91nUjo3zC'
 DISQUS_WEBSITE_SHORTNAME = 'titicomglobalblog'
-SITE_ID = 2
+SITE_ID = 3
 
 # Tell the staticfiles app to use S3Boto3 storage when writing the collected static files (when
 # you run `collectstatic`).
