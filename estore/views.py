@@ -37,7 +37,7 @@ def product_detail(request, id, slug):
             new_review.save()
     else:
       if request.user.is_authenticated():
-        review_form = ReviewForm(initial = {'email': request.user.email})
+        review_form = ReviewForm(initial = {'email': request.user.email, 'name': request.user.get_full_name()})
       else:
         review_form = ReviewForm()
     return render(request,

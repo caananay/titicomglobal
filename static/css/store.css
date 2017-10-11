@@ -266,7 +266,7 @@ ul.errorlist {
     color:#dc1616;
 }
 
-/* comments */
+/* reviews */
 .comment {
     padding:10px;
 }
@@ -278,4 +278,8 @@ ul.errorlist {
     font-size:12px;
     font-style: italic;
     color:#666;
+}
+
+.review {
+    margin-top: 30px;
 }

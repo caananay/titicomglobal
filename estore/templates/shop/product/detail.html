@@ -20,9 +20,9 @@
         </form>
         {{ product.description|linebreaks }}
     </div>
-    <div>
+    <div class="review">
     {% with reviews.count as total_reviews %}
-        <h5>{{ total_reviews }} review{{ total_reviews|pluralize }}</h5>
+        <h4>{{ total_reviews }} review{{ total_reviews|pluralize }}</h4>
     {% endwith %}
     </div>
     {% for review in reviews %}
@@ -31,14 +31,16 @@
             {{ review.body|linebreaks }}
         </div>
     {% empty %}
-        <p>Login and be the first to write a review.</p>
+        
+        <p>be the first to write a review.</p>
+        
     {% endfor %}
     
     {% if user.is_authenticated %}
         {% if new_review %}
-            <h5>Your review has been added.</h5>
+            <h4>Your review has been added.</h4>
         {% else %}
-            <h5>Write a new product review</h5>
+            <h4>Write a new product review</h4>
             <form action="." method="post">
                 {{ review_form| as_bootstrap}}
                 {% csrf_token %}

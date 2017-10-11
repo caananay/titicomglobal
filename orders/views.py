@@ -39,7 +39,10 @@ def order_create(request):
             #redirect to the payment
             return redirect(reverse('payment:process'))
     else:
-        form = OrderCreateForm()
+        if request.user.is_authenticated():
+            form = OrderCreateForm(initial = {'email': request.user.email, 'first_name': request.user.first_name, 'last_name': request.user.last_name})
+        else:
+            form = OrderCreateForm()
     return render(request, 'orders/order/create.html', {'cart': cart,
                                                         'form': form, 'active_estore': True})
 
