@@ -4,6 +4,13 @@ from accounts.models import User
 from django.core.exceptions import ValidationError 
  
 class UserRegistrationForm(UserCreationForm):
+    def __init__(self, *args, **kwargs):
+        # first call parent's constructor
+        super(UserRegistrationForm, self).__init__(*args, **kwargs)
+        # there's a `fields` property now
+        self.fields['first_name'].required = True
+        self.fields['last_name'].required = True
+
     password1 = forms.CharField(
         label='Password',
         widget=forms.PasswordInput

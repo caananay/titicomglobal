@@ -13,6 +13,7 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 import os
 import dj_database_url
 from secret_keys import *
+import boto3
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -138,6 +139,12 @@ USE_L10N = True
 
 USE_TZ = True
 
+#AWS SETTINGS
+S3_BUCKET = os.environ.get('S3_BUCKET')
+s3 = boto3.client('s3')
+# Tell django-storages the domain to use to refer to static files.
+AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com' % S3_BUCKET
+
 #DISQUS SETTINGS
 # DISQUS_API_KEY = 'c2j7Kdsxd92hqKrKuk03B5OlZB3nsaIcX38D70QAUGhAws412mpqDZf91nUjo3zC'
 DISQUS_WEBSITE_SHORTNAME = 'titicomglobalblog'
@@ -171,3 +178,4 @@ SITE_URL= 'titicomglobal.herokuapp.com'
 PAYPAL_NOTIFY_URL = 'titicomglobal.herokuapp.com'
 PAYPAL_RECEIVER_EMAIL ='doncanny-facilitator@yahoo.com'
 # PAYPAL_TEST= True
+

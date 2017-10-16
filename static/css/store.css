@@ -283,3 +283,24 @@ ul.errorlist {
 .review {
     margin-top: 30px;
 }
+
+@media only screen
+and (max-width: 768px) {
+
+  #main {
+    margin-right: -120px;
+    width: 100%;
+  }
+
+  .product-list .item {
+    width: 50%;
+  }
+
+#header {
+    padding-left: 10px;
+}
+  #header .logo {
+    color: #5aa7bd;
+}
+
+}

@@ -4,30 +4,28 @@
 
 {% block title %}Share a post{% endblock %}
 
-{% block blog_header %}
-                
-            {% endblock %}
-   {% block content %}
-         <div id="blog"></div>
-        <div class="container">
-            {% if sent %}
-                <h3>E-mail successfully sent</h3>
-                <p>"{{ post.title }}" was successfully sent by e-mail.</p>
-            {% else %}
+{% block blog_header %}{% endblock %}
+   
+{% block content %}
+    <div id="blog"></div>
+    <div class="container">
+        {% if sent %}
+            <h3>E-mail successfully sent</h3>
+            <p>"{{ post.title }}" was successfully sent by e-mail.</p>
+        {% else %}
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <h3>Share "{{ post.title }}" by e-mail</h3>
 
-            <div class="row">
-                <div class="col-sm-4"></div>
-                <div class="col-sm-4">
-                    <h3>Share "{{ post.title }}" by e-mail</h3>
-
-                    <form action="." method="post">
-                        {{ form| as_bootstrap }}
-                        {% csrf_token %}
-                        <input type="submit" value="Send e-mail">
-                    </form>
-                </div>
-                <div class="col-sm-4"></div>
+                <form action="." method="post">
+                    {{ form| as_bootstrap }}
+                    {% csrf_token %}
+                    <input type="submit" value="Send e-mail">
+                </form>
             </div>
-            {% endif %}
+            <div class="col-sm-4"></div>
         </div>
-    {% endblock %}
+        {% endif %}
+    </div>
+{% endblock %}
