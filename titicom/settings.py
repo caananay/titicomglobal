@@ -141,7 +141,8 @@ USE_TZ = True
 
 #AWS SETTINGS
 S3_BUCKET = os.environ.get('S3_BUCKET')
-s3 = boto3.client('s3')
+s3 = boto3.client('s3', aws_access_key_id=S3_KEY,
+    aws_secret_access_key=S3_SECRET)
 # Tell django-storages the domain to use to refer to static files.
 AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com' % S3_BUCKET
 
