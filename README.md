@@ -14,6 +14,20 @@ Django: is a Python framework and was used to build the backend of the project, 
 
 Postgressql DB: is an SQL database, which has been used in this project to store the data.
 
+APP FUNCTIONALITY:
+
+1. BLOG
+	a. Share blog post link via email
+	b. if user is logged in user details are prepopulate in the share link form
+	c. Pagination on the blog post list page
+2. ESTORE
+	a. User login required to purchase from store
+	b. Cart provided for shopper
+	c. logged in user details prepopulated on the purchase order form
+	d. logged in user can review a product
+3. PAYPAL
+	a. payment on the estore is done with paypal 
+	
 
 TESTING:
 
@@ -23,15 +37,15 @@ DEPLOYMENT:
 
 The project was deployed using Heroku.
 
-CREDITS:
+THIRD PARTY APPLICATIONS USED:
 
 django-taggit app: To add tags to my blog posts I used the django-taggit app (https://django-taggit.readthedocs.io/en/latest/)
 
 django-disqus: To add comments to blog posts I used the django-disqus app (https://django-disqus.readthedocs.io/en/latest/)
 
-NOTE:
+LESSONS LEARNED:
 
-The following issues were encountered when developing the app.
+The following issues were encountered when developing and deploying the app.
 
 1. Integrating Disqus to the app: 
 
