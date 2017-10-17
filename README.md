@@ -27,6 +27,8 @@ APP FUNCTIONALITY:
 	d. logged in user can review a product
 3. PAYPAL
 	a. payment on the estore is done with paypal 
+4. AWS
+	a. Serving STATIC and MEDIA files using AWS
 	
 
 TESTING:

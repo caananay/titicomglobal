@@ -13,7 +13,7 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 import os
 import dj_database_url
 from secret_keys import *
-from boto3.s3.connection import S3Connection
+
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -139,9 +139,8 @@ USE_L10N = True
 
 USE_TZ = True
 
-#AWS SETTINGS
-s3 = S3Connection(os.environ['S3_KEY'], os.environ['S3_SECRET'])
 # Tell django-storages the domain to use to refer to static files.
+S3_BUCKET = os.getenv('S3_BUCKET')
 AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com' % S3_BUCKET
 
 #DISQUS SETTINGS

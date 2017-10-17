@@ -1,8 +1,3 @@
-#AWS settings
-
-# AWS_ACCESS_KEY_ID = 'AKIAIQV5OYFEVOZBC5JQ'
-# AWS_SECRET_ACCESS_KEY = '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'
-
 #Email settings
 
 EMAIL_HOST = 'smtp.gmail.com'
