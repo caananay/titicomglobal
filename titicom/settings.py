@@ -140,8 +140,12 @@ USE_L10N = True
 USE_TZ = True
 
 # Tell django-storages the domain to use to refer to static files.
-S3_BUCKET = os.getenv('S3_BUCKET')
-AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com' % S3_BUCKET
+#AWS settings
+AWS_S3_REGION_NAME = os.getenv('S3_REGION')  # e.g. us-east-2
+AWS_ACCESS_KEY_ID = os.getenv('S3_KEY')
+AWS_SECRET_ACCESS_KEY = os.getenv('S3_SECRET')
+AWS_STORAGE_BUCKET_NAME = os.getenv('S3_BUCKET')
+AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com' % AWS_STORAGE_BUCKET_NAME
 
 #DISQUS SETTINGS
 # DISQUS_API_KEY = 'c2j7Kdsxd92hqKrKuk03B5OlZB3nsaIcX38D70QAUGhAws412mpqDZf91nUjo3zC'
