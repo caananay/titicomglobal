@@ -94,12 +94,6 @@ WSGI_APPLICATION = 'titicom.wsgi.application'
 DATABASES = {
     'default': dj_database_url.config('DATABASE_URL')
 }
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-#     }
-# }
 
 AUTH_USER_MODEL = 'accounts.User'
 
@@ -148,7 +142,6 @@ AWS_STORAGE_BUCKET_NAME = os.getenv('S3_BUCKET')
 AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com' % AWS_STORAGE_BUCKET_NAME
 
 #DISQUS SETTINGS
-# DISQUS_API_KEY = 'c2j7Kdsxd92hqKrKuk03B5OlZB3nsaIcX38D70QAUGhAws412mpqDZf91nUjo3zC'
 DISQUS_WEBSITE_SHORTNAME = 'titicomglobalblog'
 SITE_ID = 3
 
@@ -179,5 +172,11 @@ CART_SESSION_ID = 'cart'
 SITE_URL= 'titicomglobal.herokuapp.com'
 PAYPAL_NOTIFY_URL = 'titicomglobal.herokuapp.com'
 PAYPAL_RECEIVER_EMAIL ='doncanny-facilitator@yahoo.com'
-# PAYPAL_TEST= True
 
+#Email settings
+
+EMAIL_HOST = os.getenv('EMAIL_HOST')
+EMAIL_HOST_USER = os.getenv('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD')
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
