@@ -11,7 +11,6 @@ cssselect2==0.2.0
 dj-database-url==0.2.1
 Django==1.11.2
 django-debug-toolbar==1.8
-django-disqus==0.5
 django-emoticons==1.2
 django-forms-bootstrap==3.1.0
 django-libs==1.67.12
