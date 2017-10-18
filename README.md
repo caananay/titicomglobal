@@ -62,3 +62,7 @@ Eventhough Disqus was integrated with the Titicom Global web app as taught in th
 Initially, I tried to mask the settings from public view by creating a separate file named 'secret_keys.py' which held both settings and putting the file in the gitignore file.  so that when pushing to github the file would be excluded. Then I removed the file from gitignore and pushed to heroku. However, at some point during the push back and forth to github and heroku, the file ended up being exposed on github.
 
 To address this issue, I have put these settings on heroku config vars settings and I call these variables from my settings file. This way the sensitive information is not exposed on the web.
+
+3. Issues serving MEDIA and STATIC files from Heroku
+
+Using Amazon Web Services AWS for serving MEDIA and STATIC files
