@@ -49,6 +49,8 @@ THIRD PARTY APPLICATIONS USED:
 
 django-taggit app: To add tags to my blog posts I used the django-taggit app (https://django-taggit.readthedocs.io/en/latest/)
 
+DISQUS: for adding comments to the blog posts
+
 LESSONS LEARNED:
 
 The following issues were encountered when developing and deploying the app.
