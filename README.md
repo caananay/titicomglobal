@@ -78,6 +78,8 @@
 
    13. Collapsible navigation menu on mobile devices.
 
+   14. Only 3 blog posts should be display on a page at a time, subsequent blog posts carry over to the next page.
+
 ### DEPLOYMENT:
 
    The project was deployed using Heroku.
