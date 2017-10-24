@@ -41,7 +41,7 @@ Titicom Global Photography is a web app designed for a company selling photo and
 
    The application was tested manually on the following internet browsers Chrome, safari, IE and Firefox using inspect, heroku logs, Pycharm, command prompt to debug any errors on the code. The application was also tested on the following mobile devices ipad and an andriod mobile phone (samsung note3) for responsiveness.
 
-   TEST SCENERIOS:
+#### TEST SCENERIOS:
    A visitor is defined as a person is not registered on the website or logged on to the website.
 
    1. A visitor to the site should be able to register, and once registered are automatically logged on to the website.
@@ -76,9 +76,9 @@ Titicom Global Photography is a web app designed for a company selling photo and
 
 ### THIRD PARTY APPLICATIONS USED:
 
-   django-taggit app: To add tags to my blog posts I used the django-taggit app (https://django-taggit.readthedocs.io/en/latest/)
+   [django-taggit app:](https://django-taggit.readthedocs.io/en/latest/) To add tags to my blog posts I used the django-taggit app 
 
-   DISQUS: for adding comments to the blog posts
+   [DISQUS:](www.disqus.com) for adding comments to the blog posts
 
 ### LESSONS LEARNED:
 
