@@ -1,3 +1,11 @@
+[About the project](#about-the-project)
+[Technologies used](#technologies-used)
+[APP Functionality](#app-Functionality)
+[Testing](#testing)
+[Deployment](#deployment)
+[Third Party Applications Used](#third-party-applications-used)
+[Lessons Learned](#lessons-learned)
+
 ### ABOUT THE PROJECT:
 
 Titicom Global Photography is a web app designed for a company selling photo and photography tools and blogging to their followers about photography.
@@ -6,13 +14,13 @@ Titicom Global Photography is a web app designed for a company selling photo and
 
    The website was designed using the following technologies:
 
-   HTML: is used to build the webpages
+   *HTML*: is used to build the webpages
 
-   Bootstrap and CSS: this was used for the page layout design, look and feel of the website.
+   *Bootstrap and CSS*: this was used for the page layout design, look and feel of the website.
 
-   Django: is a Python framework and was used to build the backend of the project, to link the frontend with the database.
+   *Django*: is a Python framework and was used to build the backend of the project, to link the frontend with the database.
 
-   Postgressql DB: is an SQL database, which has been used in this project to store the data.
+   *Postgressql DB*: is an SQL database, which has been used in this project to store the data.
 
 ### APP FUNCTIONALITY:
 
