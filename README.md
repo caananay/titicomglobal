@@ -1,6 +1,6 @@
 * [About the project](#about-the-project)
 * [Technologies used](#technologies-used)
-* [APP Functionality](#app-Functionality)
+* [APP Functionality](#app-functionality)
 * [Testing](#testing)
 * [Deployment](#deployment)
 * [Third Party Applications Used](#third-party-applications-used)
