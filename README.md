@@ -80,6 +80,8 @@
 
    14. Only 3 blog posts should be display on a page at a time, subsequent blog posts carry over to the next page.
 
+   15. Admin user can download pdf invoice from orders.
+
 ### DEPLOYMENT:
 
    The project was deployed using Heroku.
