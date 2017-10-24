@@ -1,20 +1,20 @@
-###ABOUT THE PROJECT:
+### ABOUT THE PROJECT:
 
 Titicom Global Photography is a web app designed for a company selling photo and photography tools and blogging to their followers about photography.
 
-###TECHNOLOGIES USED:
+### TECHNOLOGIES USED:
 
-...The website was designed using the following technologies:
+   The website was designed using the following technologies:
 
-...HTML: is used to build the webpages
+   HTML: is used to build the webpages
 
-...Bootstrap and CSS: this was used for the page layout design, look and feel of the website.
+   Bootstrap and CSS: this was used for the page layout design, look and feel of the website.
 
-...Django: is a Python framework and was used to build the backend of the project, to link the frontend with the database.
+   Django: is a Python framework and was used to build the backend of the project, to link the frontend with the database.
 
-...Postgressql DB: is an SQL database, which has been used in this project to store the data.
+   Postgressql DB: is an SQL database, which has been used in this project to store the data.
 
-###APP FUNCTIONALITY:
+### APP FUNCTIONALITY:
 
 1. BLOG
 	* Share blog post link via email
@@ -37,7 +37,7 @@ Titicom Global Photography is a web app designed for a company selling photo and
 	* Policy page
 	
 
-###TESTING:
+### TESTING:
 
    The application was tested manually on the following internet browsers Chrome, safari, IE and Firefox using inspect, heroku logs, Pycharm, command prompt to debug any errors on the code. The application was also tested on the following mobile devices ipad and an andriod mobile phone (samsung note3) for responsiveness.
 
@@ -70,17 +70,17 @@ Titicom Global Photography is a web app designed for a company selling photo and
 
    13. Collapsible navigation menu on mobile devices.
 
-###DEPLOYMENT:
+### DEPLOYMENT:
 
    The project was deployed using Heroku.
 
-###THIRD PARTY APPLICATIONS USED:
+### THIRD PARTY APPLICATIONS USED:
 
    django-taggit app: To add tags to my blog posts I used the django-taggit app (https://django-taggit.readthedocs.io/en/latest/)
 
    DISQUS: for adding comments to the blog posts
 
-###LESSONS LEARNED:
+### LESSONS LEARNED:
 
 The following issues were encountered when developing and deploying the app.
 
