@@ -1,10 +1,10 @@
-[About the project](#about-the-project)
-[Technologies used](#technologies-used)
-[APP Functionality](#app-Functionality)
-[Testing](#testing)
-[Deployment](#deployment)
-[Third Party Applications Used](#third-party-applications-used)
-[Lessons Learned](#lessons-learned)
+   [About the project](#about-the-project)
+   [Technologies used](#technologies-used)
+   [APP Functionality](#app-Functionality)
+   [Testing](#testing)
+   [Deployment](#deployment)
+   [Third Party Applications Used](#third-party-applications-used)
+   [Lessons Learned](#lessons-learned)
 
 ### ABOUT THE PROJECT:
 
