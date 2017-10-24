@@ -1,14 +1,14 @@
-   [About the project](#about-the-project)
-   [Technologies used](#technologies-used)
-   [APP Functionality](#app-Functionality)
-   [Testing](#testing)
-   [Deployment](#deployment)
-   [Third Party Applications Used](#third-party-applications-used)
-   [Lessons Learned](#lessons-learned)
+* [About the project](#about-the-project)
+* [Technologies used](#technologies-used)
+* [APP Functionality](#app-Functionality)
+* [Testing](#testing)
+* [Deployment](#deployment)
+* [Third Party Applications Used](#third-party-applications-used)
+* [Lessons Learned](#lessons-learned)
 
 ### ABOUT THE PROJECT:
 
-Titicom Global Photography is a web app designed for a company selling photo and photography tools and blogging to their followers about photography.
+   Titicom Global Photography is a web app designed for a company selling photo and photography tools and blogging to their followers about photography.
 
 ### TECHNOLOGIES USED:
 
